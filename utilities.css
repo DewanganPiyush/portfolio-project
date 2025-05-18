@@ -1,0 +1,117 @@
+/* Flexbox Utilities */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: flex-end; /* Use flex-end instead of right for better cross-browser compatibility */
+}
+
+.align-center {
+    align-items: center; /* Vertically center content */
+}
+
+.align-start {
+    align-items: flex-start; /* Align items to the top */
+}
+
+.align-end {
+    align-items: flex-end; /* Align items to the bottom */
+}
+/* Flex Grow & Shrink */
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.8rem 2.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 150px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 10px var(--primary);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.btn-secondary:focus {
+    box-shadow: 0 0 10px var(--primary);
+}
+
+/* Extra Button Sizes */
+.btn-large {
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+}
+
+.btn-small {
+    padding: 0.4rem 1.6rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Utility */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}
