@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Resume download button
   document.querySelector('.btn-secondary')?.addEventListener('click', () => {
-    window.open('resume.pdf', '_blank');
+    window.open('Piyush_Dewangan.pdf', '_blank');
   });
 
   // Contact form using EmailJS
