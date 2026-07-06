@@ -32,19 +32,21 @@
         <div>
           <a href="#home">Home</a>
           <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#blog">Blog</a>
+          <a href="#education">Education</a>
         </div>
       </div>
     </nav>
-    <div class="hero flex items-centre justify-between">
+    <div id="home" class="hero flex items-centre justify-between">
       <div class="left flex-1 justify-center">
         <img src="assets/Piyush.jpg" height="550px" width="250px" alt="Profile">
       </div>
       <div class="right flex-1">
         <h6>Piyush Dewangan</h6>
-        <h1>I'm a Backend <br> <span>Software Engineer</span></h1>
-        <p>Specializing in Java, Spring Boot, Microservices, and Data Structures & Algorithms</p>
+        <h1>I'm an <br> <span>Associate Software Engineer</span></h1>
+        <p>Bangalore-based backend engineer building scalable RESTful APIs and AI-powered features with Java, Spring Boot, and Hibernate/JPA.</p>
         <button class="btn btn-secondary">DOWNLOAD RESUME</button>
       </div>
     </div>
@@ -59,9 +61,10 @@
         <h1>About <span>Me</span></h1>
         <h3>Hello! I'm Piyush Dewangan</h3>
         <p>
-          I am a Backend Software Engineer with expertise in Java, Spring Boot and Microservices. With experience in
-          building scalable and efficient web applications. I have worked on various projects, including E-Commerce and CRM
-          applications. I am passionate about solving complex problems and writing clean, maintainable code.
+          I am an Associate Software Engineer at Arivihan Technologies, building backend services with Java,
+          Spring Boot, and Hibernate/JPA — from RESTful CRUD APIs for the Internal Metrics platform to
+          backend services powering AI features. Previously a Java Developer Intern at Health Catalyst.
+          I'm passionate about solving complex problems and writing clean, maintainable code.
         </p>
         <div class="socials">
           <a href="https://www.linkedin.com/in/dewanganpiyush/"><img src="assets/linkedIn.png" width="40px" alt="LinkedIn"></a>
@@ -71,26 +74,116 @@
     </div>
   </section>
 
+  <section id="skills" class="skills">
+    <div class="container">
+      <h1 class="section-head">Skills</h1>
+      <p class="section-sub">Languages, frameworks, and tools I work with</p>
+      <div class="skill-chips">
+        <span class="chip">Java</span>
+        <span class="chip">Python</span>
+        <span class="chip">Spring Boot</span>
+        <span class="chip">Hibernate / JPA</span>
+        <span class="chip">SQL</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">REST API</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">Git</span>
+        <span class="chip">GitHub</span>
+        <span class="chip">Postman</span>
+        <span class="chip">AWS</span>
+        <span class="chip">Jenkins</span>
+        <span class="chip">Argo CD</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <h1 class="section-head">Experience</h1>
+      <div class="exp-list">
+        <div class="card exp-card">
+          <div class="exp-head">
+            <h2>Associate Software Engineer</h2>
+            <span class="exp-date">Oct 2025 – Present</span>
+          </div>
+          <h3 class="exp-company">Arivihan Technologies Pvt. Ltd.</h3>
+          <ul>
+            <li>Implemented the batch-wise onboarding module and developed RESTful CRUD APIs using Java, Spring Boot, Hibernate/JPA, and MySQL for the Internal Metrics platform.</li>
+            <li>Developed backend services for AI-powered features, including Video Interactivity metadata integration and Ask Doubt chat history.</li>
+            <li>Enhanced the Excel-based chapter upload with improved validations and precise row- and sheet-level error messages.</li>
+            <li>Investigated and resolved production issues, including fixing chapter visibility for NEET users through debugging and root cause analysis.</li>
+            <li>Raised Git PRs, tested APIs with Postman and Swagger, supported Jenkins deployments, and monitored logs using Argo CD.</li>
+          </ul>
+        </div>
+        <div class="card exp-card">
+          <div class="exp-head">
+            <h2>Java Developer Intern</h2>
+            <span class="exp-date">Mar 2025 – Aug 2025</span>
+          </div>
+          <h3 class="exp-company">Health Catalyst</h3>
+          <ul>
+            <li>Developed and maintained RESTful APIs using Java, Spring Boot, and Hibernate/JPA, handling CRUD operations across relational databases.</li>
+            <li>Wrote JUnit test cases for provider result inbox retrieval and update endpoints, improving test coverage and application reliability.</li>
+            <li>Debugged and resolved authentication issues, strengthening the user login process.</li>
+            <li>Implemented missing Liquibase rollback scripts in the Universe-DB module, ensuring safe and reliable database version control.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="projects" class="services">
     <div class="container">
       <h1 class="services-head">My Projects</h1>
-      <p>I primarily work with Java, Spring Boot, Microservices, RESTful APIs and Databases</p>
+      <p>I primarily work with Java, Spring Boot, RESTful APIs, Databases, and AI/RAG pipelines</p>
       <div class="card-grid">
         <div class="card">
           <img src="assets/Cart Logo.png" alt="E-Commerce App">
           <h2>E-Commerce Application</h2>
           <p>
-            Architected a Microservices-based E-Commerce Platform with features like product catalog, payment gateway
-            integration and order management. Optimized API response times using Redis caching.
+            Developed a monolithic e-commerce platform covering product catalog, order management, and secure
+            payments. Integrated Stripe with OAuth 2.0 authentication, optimized API response time from ~500ms to
+            ~50ms with Redis caching, and built product search, sorting, and filtering via ElasticSearch.
           </p>
+          <p class="tech"><strong>Tech:</strong> Java, Spring Boot, Spring Data JPA, MySQL, Redis, ElasticSearch, AWS</p>
         </div>
         <div class="card">
-          <img src="assets/CRM Logo.png" alt="CRM App">
-          <h2>CRM Application</h2>
+          <img src="assets/Soft Logo.jpg" alt="AI Chatbot">
+          <h2>AI-Powered Chatbot with Llama3</h2>
           <p>
-            Developed a customer management application with CRUD functionality. Integrated Spring Boot, Hibernate and
-            Thymeleaf for seamless data management and dynamic UI rendering.
+            Built an AI-powered chatbot leveraging LLaMA3 (Ollama) for contextual, domain-specific responses.
+            Implemented a document ingestion pipeline with Retrieval-Augmented Generation (RAG) to answer accurately
+            from PDFs and text files, exposed via modular Spring Boot REST services for chat history, document
+            storage, and PDF-to-text processing.
           </p>
+          <p class="tech"><strong>Tech:</strong> Java, Spring Boot, Maven, REST API, LLaMA3 (Ollama), RAG, Apache PDFBox</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="education">
+    <div class="container">
+      <h1 class="section-head">Education</h1>
+      <div class="card-grid edu-grid">
+        <div class="card exp-card">
+          <div class="exp-head">
+            <h2>Scaler</h2>
+            <span class="exp-date">2024</span>
+          </div>
+          <h3 class="exp-company">Specialized in Software Development &amp; Problem Solving</h3>
+          <ul>
+            <li>Coursework: Data Structures &amp; Algorithms, Databases &amp; SQL, Low-Level Design (LLD), Java Backend Development.</li>
+            <li>Solved 500+ DSA problems, consistently ranking within the top 10% of learners.</li>
+          </ul>
+        </div>
+        <div class="card exp-card">
+          <div class="exp-head">
+            <h2>Chhattisgarh Swami Vivekanand Technical University</h2>
+            <span class="exp-date">2021</span>
+          </div>
+          <h3 class="exp-company">B.Tech — Electrical Engineering</h3>
         </div>
       </div>
     </div>

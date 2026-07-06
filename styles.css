@@ -183,10 +183,15 @@ section.services {
 
 section.services .card-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     column-gap: 2rem;
     row-gap: 3rem;
     margin-top: 2rem;
+}
+
+.card .tech {
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 section.services .card-grid .card {
@@ -277,6 +282,123 @@ label > span {
 .submit_button:hover {
     background-color: var(--highlight);
     transform: translateY(-2px);
+}
+
+/* Shared section heading (Skills, Experience, Education) */
+.section-head {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.section-sub {
+    text-align: center;
+    color: var(--secondary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3rem;
+}
+
+/* Skills chips */
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 2rem auto 0;
+}
+
+.skill-chips .chip {
+    background: var(--card-bg);
+    color: var(--secondary);
+    border: 1px solid var(--primary);
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.skill-chips .chip:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+/* Experience & Education cards (left-aligned card variant) */
+.exp-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card.exp-card {
+    background: var(--card-bg);
+    padding: 2rem 2.5rem;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card.exp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.exp-card .exp-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.exp-card h2 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.exp-card .exp-date {
+    color: var(--secondary);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.exp-card .exp-company {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.exp-card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.exp-card ul li {
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
 }
 
 @media (max-width: 768px) {
